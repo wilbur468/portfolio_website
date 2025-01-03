@@ -1,0 +1,1 @@
+This project is intended to create a simple portfolio website.
