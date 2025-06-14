@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilbur Acharya | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="branding">
+            <h1>Wilbur Acharya</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="intro-container">
+        <div class="text-section">
+            <h1>
+                <span id="greeting">👋 Hello!</span>
+            </h1>
+            <p> <span id="name" class="interactive-name">I AM WILBY!</span></p>
+            <p>
+                <span id="job">
+                    <!-- Mechanical and CS Enthusiast icons first -->
+                    <i class="fas fa-cog rotating-gear"></i>
+                    <span class="skills-tags">
+                        <span class="tag">
+                            <i class="fas fa-wrench"></i> <!-- Mechanical Icon -->
+                        </span>
+                    </span>
+                    <strong id="job-name">Mechanical Engineer / CS Enthusiast</strong>
+                    <!-- CS and Robotics icons after text -->
+                    <span class="skills-tags">
+                        <span class="tag">
+                            <i class="fas fa-code"></i> <!-- CS Icon -->
+                        </span>
+                        <span class="tag">
+                            <i class="fas fa-robot"></i> <!-- AI/Robotics Icon -->
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <div class="intro-paragraphs">
+                <p id="intro-p">I'm a Problem-Solving Engineer with a passion for tackling tough challenges.
+                <p id="intro-p"> I oversee maintainence and reliability efforts of a chemical manufacturing facility.</p>
+                <p id="intro-p">   Currently, I am working at Bayer, contributing to our mission of <br> <strong>"Health for All, Hunger for None."</strong></p>
+            </div>
+            
+        </div>
+        <div class="image-section">
+            <img src="assets/intro_picture.jpg" alt="Wilbur Acharya" class="intro-image">
+        </div>
+    </div>
+
+<!-- Full Name Hidden Initially -->
+<p id="full-name" style="display: none;">I am Wilbur Acharya</p>
+
+
+
+<!-- Resume Section -->
+<section id="resume">
+    <div class="resume-container">
+        <div class="resume-header">
+            <h2 id="resume-header">Wilbur Acharya, EIT</h2>
+            <div id="resume-button-container">
+                <a href="\assets\Acharya_Wilbur_Resume.pdf" download class="resume-download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:wacharya@uno.edu">wacharya@uno.edu</a></p>
+            <p><i class="fas fa-phone"></i> (504)-478-5674</p>
+            <p><i class="fas fa-map-marker-alt"></i> New Orleans, LA</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/wilburacharya" target="_blank">LinkedIn</a></p>
+        </div>
+        
+        <div class="education">
+            <h3>Education</h3>
+            <div class="education-header">
+                <p>The University of New Orleans</p>
+                <p class="right-align">Cumulative GPA: 3.9/4.0</p>
+            </div>
+            <div class="education-header">
+                <p>Bachelor of Science in Mechanical Engineering</p>
+                <p class="right-align">Graduation Date: May 2023</p>
+            </div>
+            <p>Minors in Software Engineering and Mathematics</p>
+
+            <div class="education-header">
+                <p>Professional Engineer (P.E.) – Thermal and Fluids Systems 
+                <p class="right-align">Passed; Pending Experience</p>
+            </div>
+            
+            </p>
+            <p><em>Summa Cum Laude</em>; Homer-Hitt Scholarship (Full-Ride); ASME Petroleum Scholarship; Tau-Beta Pi Scholarship</p>
+        </div>
+
+        
+
+        <div class="experience">
+            <h3>Experience</h3>
+            
+            <div class="experience-entry">
+                <div class="position-details">
+                    <h4> Mechanical Maintenance Engineer </h4>
+                    <p>Luling, LA</p>
+                </div>
+                <div class="date-company">
+                    <p class="company">Bayer</p>
+                    <p class="date">May 2024 – Present</p>
+                </div>
+                <ul>
+                    <li>Coordinate with planners and technicians to formulate and implement job plans for daily maintenance tasks.</li>
+                    <li>Uphold mechanical integrity standards by supervising inspections of FRP and glass-lined vessels, relief devices, centrifuges, and other critical equipment, ensuring compliance with industry regulations.</li>
+                    <li>Collaborate with cross-functional teams and vendors to drive new projects such as coating on chutes, thumper installation, and piping upgrades while prioritizing safety and operational excellence.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-entry">
+                <div class="position-details">
+                    <h4> Maintenance and Reliability Systems Engineer </h4>
+                    <p>Luling, LA</p>
+                </div>
+                <div class="date-company">
+                    <p class="company">Bayer</p>
+                    <p class="date">June 2023 – May 2024</p>
+                </div>
+                <ul>
+                    <li>Developed and implemented a comprehensive pump report tracking bad actor pumps over the past 2 years.</li>
+                    <li>Initiated preventive maintenance strategies for cost savings by addressing issues and minimizing pump failures.</li>
+                    <li>Led a comprehensive on-site diesel spill investigation, including development of Job Task Analysis (JTA), proposing a new EFD, and overseeing equipment replacement activities on fuel tanks.</li>
+                    <li>Deployed actionable, data-driven KPIs utilizing SAP, Google Big Query, and Power BI, thereby delivering real-time insights for tracking and measuring maintenance activities and work scheduling.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="position-details">
+                    <h4> Mechanical Engineering Intern </h4>
+                    <p>Luling, LA</p>
+                </div>
+                <div class="date-company">
+                    <p class="company">Bayer</p>
+                    <p class="date">May 2022 – Aug. 2022</p>
+                </div>
+                <ul>
+                    <li>Led operator rounds automation project for transitioning from paper-based checklists to electronic tablets for equipment health tracking of centrifuge equipment worth $6 million.</li>
+                    <li>Analyzed P&IDs of 5 production units for identifying process safety materials per EPA compliance guidelines.</li>
+                    <li>Automated merging and migrating of engineering spec sheets using Python, reducing 100s of manual hours.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="position-details">
+                    <h4> Mechanical Engineering Co-Op </h4>
+                    <p>Luling, LA</p>
+                </div>
+                <div class="date-company">
+                    <p class="company">Bayer</p>
+                    <p class="date">June 2021 – Dec. 2021</p>
+                </div>
+                <ul>
+                    <li>Created global training materials and trained 5 site operators in using Asset Performance Management software.</li>
+                    <li>Assisted engineers and vibration technicians for controller setup and installation of 105 AMS vibration monitors.</li>
+                    <li>Supported CAD drawings migration to Autodesk Vault; inspected specifications and multi-million project bids.</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Engineering:</strong> SAP, Prometheus, Pipe-Flo, GE APM, AMS Machine Works, SolidWorks, Fusion 360, AutoCAD, Autodesk</li>
+                <li><strong>Programming Languages:</strong> Java, Python, C++, JavaScript, VBS, Vue.js, SAP GUI Scripting, Google Big Query</li>
+                <li><strong>Technical:</strong> 3-D Printing, Laser-Cutting, Band Saw, Lathe, Wire Brush, Angle Grinder, Drill Press </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Projects</h2>
+        
+            <div class="project-grid">
+                <div class="project-card fade-in">
+                    <h3>Two-Phase Siphon Flow Analysis</h3>
+                    <p>
+                        <strong>How much air can you pump through a siphon before it fails?</strong><br>
+                        We found the answer is <strong>67%</strong> — much higher than expected.<br>
+                        This helps industries like paper and nuclear power<br>
+                        save energy by using natural siphoning instead of expensive pumps.
+                    </p>
+                    <p class="tech-tags">Experimental Design • Fluid Mechanics • Data Analysis • Industrial Applications</p>
+                    <a href="siphon-project.html" target="_blank">View Project →</a>
+                </div>
+        
+                <div class="project-card fade-in">
+                    <h3>Spec Sheet Merger</h3>
+                    <p>Automated merging of engineering spec sheets, saving hours of manual effort.</p>
+                    <p class="tech-tags">Python • Pandas • Automation</p>
+                    <a href="siphon-project.html" target="_blank">View Project →</a>
+                </div>
+        
+                <div class="project-card ">
+                    <h3>Asset Performance Training Suite</h3>
+                    <p>Global training material and guide for APM systems deployed across plants.</p>
+                    <p class="tech-tags">GE APM • SAP • Training Design</p>
+                    <a href="#">(NDA Restricted)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+
+
+</body>
+</html>

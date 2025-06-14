@@ -1,0 +1,865 @@
+/* General Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark Theme Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Branding - Name on the Left */
+.branding h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #e0e0e0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    color: #76c7c0;
+    text-decoration: none;
+}
+
+/* Intro Section */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    
+}
+
+.intro-container:hover {
+    transform: scale(1.02);
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:60%
+}
+
+.intro-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 50%;
+    border: 5px solid #76c7c0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    transform: translateX(-20px);
+}
+
+.text-section {
+    width: 70%;
+    max-width: 100%;
+    padding: 0px 2rem;
+    
+}
+
+.text-section .highlight-name {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    color: #76c7c0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    
+}
+
+#job {
+    font-size: 20px;
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'League Spartan', sans-serif;
+    opacity: 87%;
+    display: block;
+    text-align: center;
+}
+
+/*.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #121212;
+    background-color: #76c7c0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+    */
+
+.cta-button:hover {
+    background-color: #89e1d4;
+}
+
+#greeting {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    animation: fadeInOut 5s infinite;
+    text-align: center;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Animation for stretching text */
+@keyframes stretch {
+    0% { letter-spacing: 2px; }
+    50% { letter-spacing: 10px; }
+    100% { letter-spacing: 2px; }
+}
+
+.interactive-name {
+    cursor: pointer;
+    color: #3498db;
+    text-decoration: underline;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.interactive-name:hover {
+    animation: stretch 1s forwards;
+    color: #1abc9c;
+}
+
+/* Styling for #name */
+#name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#name:hover {
+    color: #76c7c0;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.interactive-name:hover {
+    color: #1abc9c;
+}
+
+/* Rotating Gear Icon */
+.rotating-gear {
+    margin-left: 8px; /* Space between text and gear */
+    font-size: 20px; /* Adjust the size of the gear */
+    color: #ffffff; /* Matches the text color, change if needed */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Skills Tags for Hover Effects */
+.skills-tags {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tag {
+    background-color: transparent;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 5px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+/* Hover effect for tags */
+.tag:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slightly enlarges the tag on hover */
+}
+
+/* Add animation for icons */
+.tag i {
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover animation for icons */
+.tag:hover i {
+    transform: rotate(15deg); /* Slight rotation on hover */
+}
+
+/* Hover effect for job text */
+#job-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 87%;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'League Spartan', sans-serif;
+    
+    
+}
+
+
+#job-name:hover{
+    color: red;
+    transform: scale(1.1) rotate(50deg); /* Scale and tilt */
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+
+/* Hover effect for the gear */
+.rotating-gear:hover {
+    background-color: #0056b3;
+    animation: rotate 1s linear infinite; /* Speed up the rotation */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.intro-paragraphs {
+    text-align: center; /* Horizontally center the text */
+    max-width: 85%; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the block horizontally */
+    line-height: 1.6; /* Improve line spacing */
+    text-align: justify; /* Justify the text for a clean look */
+    color: #e0e0e0; /* Ensure good contrast on dark background */
+    font-family: 'League Spartan', sans-serif; /* Use a clean, modern font */
+    
+}
+
+#intro-p{
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'League Spartan', sans-serif;
+    opacity: 90%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+p strong {
+    color: #36f146; /* Highlight important text */
+}
+
+#resume {
+    padding: 6rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.resume-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-container h3 {
+    font-size: 1.8rem;
+    color: #89e1d4;
+    margin-bottom: 10px;
+}
+
+.resume-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Centers all items horizontally */
+    align-items: center; /* Aligns text vertically */
+    gap: 10px; /* Space between items */
+    font-size: 1rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    color: white; /* Custom link color */
+    opacity: 87%;
+    text-decoration: none; /* No underline */
+}
+
+.contact-info a:hover {
+    color: #89e1d4;
+}
+
+.contact-info p:not(:last-child)::after {
+    content: " | "; /* Adds a pipe separator */
+    color: #e0e0e0; /* Separator color */
+}
+
+.resume-container ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.resume-container ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.resume-container ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.resume-container strong {
+    color: white;
+}
+
+.education {
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 30px;
+    color: #333; /* Text color */
+}
+
+.education h3 {
+    font-size: 2rem;
+    color: white; /* Custom color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #76c7c0;
+    padding-bottom: 5px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.education p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.right-align {
+    text-align: right;
+    font-size: 1rem;
+    color: white; /* Lighter color for secondary text */
+    margin: 5px 0;
+}
+
+
+.experience {
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 30px;
+    color: white; /* Text color */
+    opacity: 87%;
+}
+.experience h3 {
+    font-size: 2rem;
+    color: white; /* Custom color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #76c7c0;
+    padding-bottom: 5px;
+}
+
+.experience-entry h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.experience-entry {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444; /* Subtle divider */
+    margin-bottom: 20px;
+}
+
+.position-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.position-details p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white
+    
+}
+
+.date-company {
+    display: flex;
+    justify-content: space-between; /* Align company name to the left and date to the right */
+    align-items: center; /* Center text vertically */
+    font-size: 1rem;
+    font-weight: 600;
+    color: white; /* Match text color with the rest */
+    margin-bottom: 5px;
+}
+
+.date-company p {
+    margin: 0; /* Remove extra margin for proper alignment */
+}
+
+.date-company .company {
+    font-weight: bold;
+    font-size: 1.3rem; /* Slightly larger for emphasis */
+    letter-spacing: 1px;
+    color: white;
+    
+    
+}
+
+.date-company .date {
+    
+    font-size: 1rem;
+    color: white /* Softer color for the date */
+}
+
+/* Bullet List */
+.experience-entry ul {
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.experience-entry ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    
+}
+
+.experience-entry ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #76c7c0;
+    font-size: 1.1rem;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+
+
+.skills {
+    font-family: 'League Spartan', sans-serif; /* Match other sections */
+    margin-bottom: 30px;
+    color: white; /* Consistent text color */
+    opacity: 87%; /* Add subtle opacity for a clean look */
+}
+
+.skills h3 {
+    font-size: 1.8rem;
+    color: white; /* Same as other section headings */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #76c7c0; /* Accent color */
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.skills ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px; /* Consistent padding */
+    margin-top: 10px;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 1rem; /* Balanced size */
+    color: white; /* Text color */
+}
+
+.skills ul li::before {
+    content: '•'; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: #3498db; /* Match bullet color with the theme */
+    font-size: 1.2rem; /* Slightly larger for better visibility */
+}
+
+.skills strong {
+    color: #76c7c0; /* Accent color for categories */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-align content */
+    position: relative; /* Needed for absolute positioning */
+}
+
+.resume-header h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%; /* Ensures the header spans full width for centering */
+}
+
+#resume-button-container {
+    position: absolute; /* Allows placement relative to .resume-header */
+    right: 0; /* Aligns the button to the right */
+    top: 50%; /* Vertically aligns with the header */
+    transform: translateY(-50%); /* Corrects vertical alignment */
+}
+
+/* Adjust button styling for smaller size */
+.resume-download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Smaller button size */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resume-download-btn i {
+    margin-right: 6px;
+    font-size: 16px; /* Smaller icon size */
+}
+
+.resume-download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Links */
+a {
+    color: #76c7c0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #89e1d4;
+}
+
+
+/* Project Section */
+.projects-container {
+    padding: 6rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #76c7c0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #121212;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 20px rgba(118, 199, 192, 0.3);
+}
+
+.project-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.tech-tags {
+    font-size: 0.9rem;
+    color: #76c7c0;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #89e1d4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-card p strong {
+    color: inherit;
+    font-weight: bold;
+}
+.project-card a:hover {
+    color: #36f146;
+}
+
+/* Project Details */
+
+.project-detail-container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 50px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-radius: 12px;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    line-height: 1.8;
+}
+
+.project-detail-container h2 {
+    font-size: 2.8rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #76c7c0;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.project-detail-container h3 {
+    font-size: 1.8rem;
+    color: #89e1d4;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.project-detail-container p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-detail-container ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.project-detail-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.project-detail-container section {
+    margin-bottom: 35px;
+}
+
+.project-hero-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Fancy link for publication */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #76c7c0;
+    border-bottom: 2px solid #76c7c0;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    color: #36f146;
+    border-bottom-color: #36f146;
+}
+
+/* ───── Project image styling / interaction ───── */
+.project-image {
+    margin: 30px 0;
+    overflow: hidden;              /* hides corners when scaling */
+    border-radius: 12px;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 35px rgba(118,199,192,.35);
+}
+
+/* subtle difference for the hero so it spans full width of container */
+.project-image.hero {
+    margin-top: 10px;
+    max-width: 60%;        
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image.side-by-side {
+    margin: 30px auto;            /* centers the figure horizontally */
+    text-align: center;
+    max-width: 700px;             /* adjust width to your taste */
+}
+
+/* optional: keep side‑by‑side images narrow on very wide screens */
+@media (min-width: 992px){
+    .project-image.side-by-side{
+        max-width: 70%;             /* keeps text wrapping nicely */
+    }
+}
+
+.project-image figcaption {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    line-height: 1.4;
+}
